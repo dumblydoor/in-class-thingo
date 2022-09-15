@@ -1,0 +1,67 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body style="background-color:pink">
+  <div class="container">
+    
+    <center>
+      <h1 style="background-color:white ;">image recognition</h1>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+      <br>
+      <hr> <hr> 
+      <div id="result"></div>
+<P>glue</P>
+      <br>
+      <hr> <hr>
+<p>pen</p>
+      <br>
+      <hr><hr>
+<P>stapler</P>
+      <br>
+      <hr><hr>
+<p>sharpie</p>
+      <br>
+      <hr><hr>
+<p>highlighter</p>
+<hr><hr> <hr><hr>
+<label>Webcam View - </label>
+<div id="camera"></div>
+<br>
+<hr> <hr> 
+<div id="result"></div>
+<button style="background-color:BLUE">capture image</button>
+<br>
+<br>      
+<button style="background-color:green">identify image</button>
+<p style="font-size: 22px;">Object :  </p>
+      <P id="result_object_name"></P>
+      <p style="font-size: 22px;">Accuracy :  </p>
+      <p id="result_object_accuracy"></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
